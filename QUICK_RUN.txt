@@ -1,0 +1,111 @@
+═══════════════════════════════════════════════════════════════
+🚀 QUICK RUN GUIDE - CRYPTO INSIGHT
+═══════════════════════════════════════════════════════════════
+
+📋 STEP 1: INSTALL DEPENDENCIES
+─────────────────────────────────────────────────────────────
+
+Pastikan Python 3.8+ sudah installed.
+Verifikasi: python --version
+
+Kemudian:
+
+  pip install -r requirements.txt
+
+Atau manual:
+
+  pip install PyQt5
+  pip install psycopg2-binary
+
+
+▶️  STEP 2: RUN APPLICATION
+─────────────────────────────────────────────────────────────
+
+Cara paling gampang:
+
+  python main.py
+
+Tunggu 3-5 detik sampai splash screen dan login window muncul.
+
+
+🔑 LOGIN TEST ACCOUNT
+─────────────────────────────────────────────────────────────
+
+Username: testuser
+Password: test1234
+Role:     user atau penerbit
+
+Atau REGISTER akun baru!
+
+
+⚠️  COMMON ERRORS & SOLUTIONS
+─────────────────────────────────────────────────────────────
+
+❌ "No module named 'PyQt5'"
+   ✓ Solusi: pip install PyQt5
+
+❌ "No module named 'psycopg2'"
+   ✓ Solusi: pip install psycopg2-binary
+
+❌ "Connection failed: Could not connect to server"
+   ✓ Check internet connection
+   ✓ Run: python app_db_fixed.py  (untuk test database)
+
+❌ "ImportError: cannot import name 'dashboard_ui'"
+   ✓ Pastikan folder path benar
+   ✓ Run dari root directory: cd /path/to/barubaru
+
+
+📁 FILE STRUCTURE
+─────────────────────────────────────────────────────────────
+
+main.py                    → Entry point (jalankan ini!)
+auth_ui_cyberpunk.py      → Login & Register UI
+app_db_fixed.py           → Database connection
+dashboard_ui.py           → Main dashboard
+requirements.txt          → Dependencies list
+RUN_GUIDE.md              → Detailed guide
+QUICK_RUN.txt             → File ini
+
+
+🔧 ADVANCED COMMANDS
+─────────────────────────────────────────────────────────────
+
+# Test database only:
+python app_db_fixed.py
+
+# Test auth UI only:
+python auth_ui_cyberpunk.py
+
+# Run with verbose output:
+python -u main.py
+
+# Using Virtual Environment:
+python -m venv venv
+source venv/bin/activate  (Linux/Mac)
+OR
+venv\Scripts\activate     (Windows)
+
+pip install -r requirements.txt
+python main.py
+
+
+📝 NOTES
+─────────────────────────────────────────────────────────────
+
+• Database: Railway PostgreSQL (SSL enabled)
+• UI Framework: PyQt5
+• Style: Cyberpunk theme dengan neon colors
+• Language: Support English & Indonesia
+
+
+✅ READY TO GO!
+═══════════════════════════════════════════════════════════════
+
+Just run:
+
+    python main.py
+
+Happy Coding! 🎉
+
+═══════════════════════════════════════════════════════════════
