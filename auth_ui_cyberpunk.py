@@ -539,8 +539,14 @@ class CyberpunkAuthWindow(QtWidgets.QWidget):
             
             # Then import and show dashboard
             try:
-                from dashboard_ui import DashboardWindow
-                self.dashboard = DashboardWindow(u, role, sid)
+                from dashboard_ui import Dashboard
+                # Prepare user data dict
+                user_data = {
+                    'username': u,
+                    'role': role,
+                    'id': 1  # This will be fetched from DB in Dashboard
+                }
+                self.dashboard = Dashboard(user_data, sid)
                 self.dashboard.destroyed.connect(self.show)
                 self.dashboard.show()
             except ImportError as e:
