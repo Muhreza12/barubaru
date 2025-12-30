@@ -1,0 +1,170 @@
+
+══════════════════════════════════════════════════════════════
+ 💫 QUICK COMMAND CHEAT SHEET
+══════════════════════════════════════════════════════════════
+
+📌 WINDOWS ONLY
+──────────────────────────────────────────────────────────────
+
+STEP 1: Buka folder project
+  Shift + Right Click di folder
+  → Pilih "Open PowerShell window here"
+
+STEP 2: Cek Python install
+  python --version
+
+STEP 3: Install library
+  pip install -r requirements.txt
+
+STEP 4: RUN!
+  python main.py
+
+DONE! 🎉
+
+
+📌 MAC / LINUX
+──────────────────────────────────────────────────────────────
+
+STEP 1: Buka Terminal
+
+STEP 2: Pergi ke folder
+  cd ~/Documents/barubaru
+  (atau path ke folder project kamu)
+
+STEP 3: Cek Python
+  python3 --version
+
+STEP 4: Install library
+  pip3 install -r requirements.txt
+
+STEP 5: RUN!
+  python3 main.py
+
+DONE! 🎉
+
+
+📌 FULL COPY-PASTE COMMANDS
+──────────────────────────────────────────────────────────────
+
+ALL SYSTEMS (Copy-Paste):
+
+# 1. Navigate to project folder
+cd path/to/barubaru
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run aplikasi
+python main.py
+
+
+📌 COMMON PROBLEMS & FIX
+──────────────────────────────────────────────────────────────
+
+❌ "python: command not found"
+FIX: pip install -r requirements.txt
+
+❌ "No module PyQt5"
+FIX: pip install PyQt5
+
+❌ "No module psycopg2"
+FIX: pip install psycopg2-binary
+
+❌ "Could not connect to server"
+FIX: Check internet, run: python app_db_fixed.py
+
+❌ "ImportError: No module 'dashboard_ui'"
+FIX: Make sure you're in correct folder (cd barubaru)
+
+❌ Window doesn't appear
+FIX: Wait 5-10 seconds, check console for errors
+
+
+📌 USEFUL COMMANDS
+──────────────────────────────────────────────────────────────
+
+# Check current folder
+dir              (Windows)
+ls               (Mac/Linux)
+
+# List files with details
+dir /s           (Windows)
+ls -la           (Mac/Linux)
+
+# Test database only
+python app_db_fixed.py
+
+# Test auth UI only
+python auth_ui_cyberpunk.py
+
+# Run with debug output
+python -u main.py
+
+# Stop running program
+Ctrl + C
+
+# Clear screen
+cls              (Windows)
+clear            (Mac/Linux)
+
+
+📌 VIRTUAL ENVIRONMENT (OPTIONAL)
+──────────────────────────────────────────────────────────────
+
+# Create venv
+python -m venv venv
+
+# Activate venv (Windows)
+venv\Scripts\activate
+
+# Activate venv (Mac/Linux)
+source venv/bin/activate
+
+# Install in venv
+pip install -r requirements.txt
+
+# Run in venv
+python main.py
+
+# Deactivate venv
+deactivate
+
+
+📌 EXPECTED SUCCESS OUTPUT
+───────────────────────────────────════════════════════
+
+When you run: python main.py
+
+You should see:
+
+  ✅ Connected to Railway PostgreSQL
+  ⏳ [Loading bar animation...]
+  👋 [Login Window Appears]
+
+Then:
+  ✅ Can login or register
+  💫 Ready to use!
+
+
+💋 LOGIN CREDENTIALS (FOR TESTING)
+──────────────══════════════════════════════════════
+
+Username: testuser
+Password: test1234
+Role:     user or penerbit
+
+Or register new account!
+
+
+🌟 TIPS
+══════════════════════════════════════════════════════════════
+
+• First run might take 5-10 seconds
+• Internet connection REQUIRED (database)
+• Don't close terminal while app is running
+• Click X on window to close app properly
+• Restart if something goes wrong
+
+
+✅ READY? Just copy-paste and run: python main.py
+══════════════════════════════════════════════════════════════
